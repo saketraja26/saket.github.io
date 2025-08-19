@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saket Raja - Graphic Designer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A slightly softer background */
+        }
+        /* Simple transition for the mobile menu */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Saket Raja</a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-xl transform translate-x-full">
+            <div class="flex justify-end p-4">
+                 <button id="close-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <nav class="flex flex-col items-center space-y-6 mt-8">
+                <a href="#about" class="text-lg text-gray-600 hover:text-indigo-600 transition-colors duration-300 mobile-menu-link">About</a>
+                <a href="#projects" class="text-lg text-gray-600 hover:text-indigo-600 transition-colors duration-300 mobile-menu-link">Projects</a>
+                <a href="#contact" class="text-lg text-gray-600 hover:text-indigo-600 transition-colors duration-300 mobile-menu-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="text-center py-24 px-6 bg-white">
+        <div class="container mx-auto">
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                Graphic Designer & Web Developer
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Blending creativity with code to craft visually stunning designs and seamless digital experiences.
+            </p>
+            <a href="#projects" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 hover:scale-105 transform transition-all duration-300">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="container mx-auto px-6 py-20 sm:py-28">
+        <div class="grid lg:grid-cols-5 gap-12 items-start">
+            <div class="lg:col-span-3 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                <h2 class="text-3xl font-bold mb-6">About Me</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    As a Computer Science student with a deep passion for design, I specialize in creating engaging visuals and intuitive web experiences. My work spans from conceptualizing event branding to developing fully responsive and functional websites.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    I have a proven track record of leadership and collaboration, having led design teams for major events and managed development projects from the initial concept to final deployment.
+                </p>
+                <a href="https://docs.google.com/document/d/1vo-fTD_8D8tN_9GRL1bKVJxZSC0mEzgf/edit?usp=sharing&ouid=101130080395110734744&rtpof=true&sd=true" class="inline-block mt-6 text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-300 group">
+                    <span>Download Resume</span>
+                    <span class="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">&rarr;</span>
+                </a>
+            </div>
+
+            <div class="lg:col-span-2 space-y-6">
+                 <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="text-2xl font-bold mb-6">Core Skills</h3>
+                    <div class="space-y-5">
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">Design</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="flex items-center bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Adobe Illustrator</span>
+                                <span class="flex items-center bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Figma</span>
+                                <span class="flex items-center bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Photoshop</span>
+                            </div>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">Frontend</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">HTML & CSS</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">Bootstrap</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">Next.js</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">Backend & Other</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                                <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">Java</span>
+                                <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">MERN Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-white py-20 sm:py-28">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900">My Projects</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                    A selection of my work, showcasing a blend of graphic design and web development skills.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 group">
+                    <img src="images/PHOTOSTAND-01 1.png" alt="Y20 Conclave Branding" class="aspect-video w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Y20 Conclave</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Led the design team to create the complete visual identity for this major youth summit.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Branding</span>
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Illustrator</span>
+                        </div>
+                        <a href="https://www.behance.net/gallery/196764803/Y20-2023-CONCLAVE-Event-Graphic-Design" target="_blank" class="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-300 group">
+                            <span>View on Behance</span>
+                            <span class="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 group">
+                    <img src="images/Branding.jpg" alt="Draw Five Website" class="aspect-video w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Draw Five Website</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Developed the digital hub for the Draw Five gaming community, showcasing tools and resources.</p>
+                         <div class="flex flex-wrap gap-2 mb-4">
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Next.js</span>
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">MongoDB</span>
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Web Dev</span>
+                        </div>
+                        <a href="https://www.drawfive.in/" class="text-indigo-600 font-semibold cursor-not-allowed opacity-70">
+                            <span>View Website</span> &rarr;
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 group">
+                    <img src="images/Slide 16_9 - 38.jpg" alt="Draw Five Branding" class="aspect-video w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Draw Five Branding</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Developed a strong identity for an esports community, merging gaming culture with a professional look.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Branding</span>
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Logo Design</span>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/1myK9cZ9CYUX5tvo718hpadVj313SIkvB?usp=sharing" class="text-indigo-600 font-semibold cursor-not-allowed opacity-70">
+                            <span>Project Details</span> &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 group">
+                    <img src="images/The Venture - Presentation.png" alt="Venture Brochure" class="aspect-video w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Venture Brochure & Socials</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Created a professional brochure and clean social media templates using modern 3D elements.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Graphic Design</span>
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">3D Elements</span>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/1zM0F9ry5f0EU8-Gy_zo4WAPiZxWmQI2q?usp=sharing" class="text-indigo-600 font-semibold cursor-not-allowed opacity-70">
+                            <span>Project Details</span> &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 group">
+                    <img src="images/image.png" alt="Food Crush Branding" class="aspect-video w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Food Crush Branding</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Designed a cohesive and appealing brand identity for a small restaurant to attract a food-loving audience.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Branding</span>
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Menu Design</span>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/10lWKDCvazyexT_x7aeSr9jqm7V2Jl-l1?usp=sharing" class="text-indigo-600 font-semibold cursor-not-allowed opacity-70">
+                            <span>Project Details</span> &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 group">
+                    <img src="images/ride.png" alt="Ride 23 Project" class="aspect-video w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">R.I.D.E.23</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                        As Social Media Head (Design) for R.I.D.E. 23, I created visually captivating promotional graphics and multimedia content to enhance the event's visual identity.
+                    </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Skill 1</span>
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Skill 2</span>
+                           <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Skill 3</span>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/11l619looK5orZOWEGBIgAEpzAosxIiHG?usp=drive_link" class="text-indigo-600 font-semibold cursor-not-allowed opacity-70">
+                            <span>Project Details</span> &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto px-6 py-20 sm:py-28 text-center">
+         <h2 class="text-4xl font-extrabold text-gray-900">Get In Touch</h2>
+         <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+            I'm currently open to new opportunities and collaborations. Feel free to reach out!
+         </p>
+         <div class="mt-8">
+            <a href="mailto:Saketraja5@gmail.com" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 hover:scale-105 transform transition-all duration-300">
+                Say Hello
+            </a>
+         </div>
+         <div class="flex justify-center space-x-6 mt-10">
+            <a href="https://github.com/saketraja26" target="_blank" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">
+                <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.805 8.205 11.385.6.11.82-.258.82-.577v-2.02c-3.33 1.45-4.032-1.61-4.032-1.61-.546-1.388-1.332-1.758-1.332-1.758-1.09-.748.083-.734.083-.734 1.205.085 1.838 1.238 1.838 1.238 1.07 1.833 2.809 1.302 3.493.996.108-.775.418-1.302.762-1.602-2.665-.3-5.466-1.332-5.466-5.932 0-1.308.465-2.378 1.238-3.218-.124-.3-.538-1.516.117-3.177 0 0 1.008-.323 3.3.99 2.08-.577 4.31-.577 6.39 0 2.29-1.313 3.3-.99 3.3-.99.656 1.66.242 2.877.118 3.177.77.84 1.238 1.91 1.238 3.218 0 4.61-2.805 5.626-5.475 5.922.428.368.815 1.08.815 2.18v3.238c0 .32.22.692.82.577C20.562 21.805 24 17.302 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd" /></svg>
+            </a>
+            <a href="https://www.behance.net/gallery/196764803/Y20-2023-CONCLAVE-Event-Graphic-Design" target="_blank" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">
+                <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1.272c-.11-.08-.24-.132-.38-.132-2.22 0-3.328 1.05-3.328 3.14V7.5h-2.14V1.272h-1.6V20.73H8.38v-8.68h1.6V20.73h1.6V12.98c0-.756.242-1.134.726-1.134.484 0 .726.378.726 1.134v7.75h1.6V12.98c0-.756.242-1.134.726-1.134.484 0 .726.378.726 1.134v7.75h1.6V7.5h1.6v-6.228zM24 12c0-3.328-1.57-4.992-4.71-4.992-1.57 0-2.355.79-2.355 2.37v.884c0 1.58.785 2.37 2.355 2.37 1.57 0 2.355-.79 2.355-2.37V12zm-1.6 0v-1.12c0-.756-.242-1.134-.726-1.134-.484 0-.726.378-.726 1.134v1.12c0 .756.242 1.134.726 1.134.484 0 .726-.378.726-1.134zm-8.8 0c0-3.328-1.57-4.992-4.71-4.992-1.57 0-2.355.79-2.355 2.37v.884c0 1.58.785 2.37 2.355 2.37 1.57 0 2.355-.79 2.355-2.37V12zm-1.6 0v-1.12c0-.756-.242-1.134-.726-1.134-.484 0-.726.378-.726 1.134v1.12c0 .756.242 1.134.726 1.134.484 0 .726-.378.726-1.134z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/saket-raja-a8647021b/" target="_blank" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">
+                <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.23 0H1.77C.79 0 0 .79 0 1.77v20.46C0 23.21.79 24 1.77 24h20.46c.98 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0zM7.28 20.41H3.66V8.98h3.62v11.43zM5.47 7.23c-1.17 0-2.12-.95-2.12-2.12s.95-2.12 2.12-2.12 2.12.95 2.12 2.12-.95 2.12-2.12 2.12zM20.42 20.41h-3.62v-5.69c0-1.36-.02-3.11-1.9-3.11-1.9 0-2.18 1.48-2.18 3.01v5.79h-3.62V8.98h3.47v1.59h.05c.48-.91 1.65-1.87 3.42-1.87 3.66 0 4.34 2.41 4.34 5.54v6.17z"/></svg>
+            </a>
+         </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 px-6 text-center">
+        <div class="container mx-auto">
+            <div class="mb-4">
+                <a href="#about" class="text-gray-400 hover:text-white mx-3 transition-colors duration-300">About</a>
+                <a href="#projects" class="text-gray-400 hover:text-white mx-3 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="text-gray-400 hover:text-white mx-3 transition-colors duration-300">Contact</a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 Saket Raja. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        // Function to open the menu
+        function openMenu() {
+            mobileMenu.classList.remove('translate-x-full');
+        }
+
+        // Function to close the menu
+        function closeMenu() {
+            mobileMenu.classList.add('translate-x-full');
+        }
+
+        // Event listeners
+        mobileMenuButton.addEventListener('click', openMenu);
+        closeMenuButton.addEventListener('click', closeMenu);
+
+        // Close menu when a link is clicked
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    </script>
+</body>
+</html>
